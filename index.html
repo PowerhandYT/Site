@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--
+    <div class="nav-menu">
+        <img src="C:/Users/bogda/OneDrive/Dokumenty/Spark Pro/site/images/logo.jpg" alt="logo" class="nav-logo">
+        <div class="nav-container">
+            <a href="index.html" class="nav-item">Mājas lapa</a>
+            <a href="/navig/products.html" class="nav-item">Produkti</a>
+            <a href="/navig/news.html" class="nav-item">Jaunumi</a>
+            <a href="/navig/katalog.html" class="nav-item">Katalogi</a>
+            <a href="/navig/makers.html" class="nav-item">Ražotāji</a>
+            <a href="/navig/contacts.html" class="nav-item">Kontakti</a>
+            <a href="/navig/aboutus.html" class="nav-item">Par mums</a>
+            
+        </div>
+        <div class="nav-lang">
+            
+        </div>
+    </div>
+    -->
+    <div class="site">
+        <!--
+    <header class="site__header d-lg-none">
+        <div class="mobile-header mobile-header--sticky" data-sticky-mode="pullToShow">
+            <div class="mobile-header__panel">
+                <div class="container">
+                    <div class="mobile-header__body">
+                        <a class="mobile-header__logo" href="index.html">
+                            <img src="images/vmestologo.svg">
+                        </a>
+                        <div class="search search--location--mobile-header mobile-header__search">
+                            <div class="search__body">
+                                <form class="search__form" action="">
+                                    <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off">
+                                    <button class="search_button search_button--type--submit" type="submit">
+                                        <svg width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#search-20"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="search_button search_button--type--close" type="button">
+                                        <svg width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#cross-20"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="search__border"></div>
+                                </form>
+                                <div class="search__suggestions suggestions suggestions--location--mobile-header"></div>
+                            </div>
+                        </div>
+                        <div class="mobile-header__indicators">
+                            <div class="indicator indicator--mobile-search indicator--mobile d-md-none">
+                                <button class="indicator__button">
+                                    <span class="indicator__area">
+                                        <svg width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#search-20"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="indicator indicator--mobile d-sm-flex d-none">
+                                <a href="wishlist.html" class="indicator__button">
+                                    <span class="indicator__area">
+                                        <svg width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#heart-20"></use>
+                                        </svg>
+                                        <span class="indicator__value">0</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="indicator indicator--mobile">
+                                <a href="cart.html" class="indicator__button">
+                                    <span class="indicator__area">
+                                        <svg width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#cart-20"></use>
+                                        </svg>
+                                        <span class="indicator__value">3</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+-->
+        <header class="site__header d-lg-block d-none">
+            <div class="site-header">
+                <!-- .topbar-->
+                <div class="site-header__topbar topbar">
+                    <div class="topbar__container container">
+                        <div class="topbar__row">
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="about-us.html">About Us</a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="contact-us.html">Contacts</a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="location.html">Store Location</a>
+
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="track-order.html">Track Order</a>
+                            </div>
+                            <div class="topbar__item topbar__item--link">
+                                <a class="topbar-link" href="blog-classic.html">Blog</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-header_middle container">
+                <div class="site-header__search">
+                    <div class="search search--location--header">
+                        <div class="search__body">
+                            <form class="search__form" action="">
+                                <select class="search__categories" aria-label="Category">
+                                    <option value="all">All Categories</option>
+                                    <option>Instruments</option>
+                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Power Tools</option>
+                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Mehanic Tools</option>
+                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Hand Tools</option>
+                                    <option>Bath Tiles</option>
+                                    <option>Floor Tiles</option>
+                                    <option>Kitchen Tiles</option>
+                                    <option>Facade Tiles</option>
+                                    <option>Mosaic Tiles</option>
+                                    <option>Clinkers and Steps</option>
+                                    <option>Swimming Pool Tiles</option>
+                                    <option>TILES IN STOCK</option>
+                                    <option>New Samples</option>
+                                    <option>Classic</option>
+                                    <option>Wood Effect Tiles</option>
+                                    <option>Ventilated Facades</option>
+                                    <option>Vinyl</option>
+                                </select>
+                                <input class="search__input" name="search" placeholder="Search over 1,000 products"
+                                    area-label="Site search" type="text" autocomplete="off">
+                                <button class="search__button search__button--type--submit" type="submit">
+
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="site-header__nav-panel">
+                <div class="nav-panel nav-panel--sticky" data-sticky-mode="pullToShow">
+                    <div class="nav-panel__container container">
+                        <div class="nav-panel__row">
+                            <div class="nav-panel__departments">
+                                <!-- .departments -->
+                                <div class="departments departments--open departments--fixed"
+                                    data-departments-fixed-by=".block-slideshow">
+                                    <div class="departments__body">
+                                        <div class="departments__links-wrapper">
+                                            <div class="departments__submenus-container">
+                                            </div>
+                                            <ul class="departments__links">
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Power Tools
+                                                    </a>
+
+                                                    <div
+                                                        class="departments__submenu departments__submenu--type--megamenu departments__submenu--size--xl">
+                                                        <!--.megamenu-->
+                                                        <div class="megamenu megamenu--departments">
+                                                            <div class="megamenu__body">
+                                                                <div class="row">
+                                                                    <div class="col-3">
+                                                                        <ul
+                                                                            class="megamenu__links megamenu__links--level--0">
+                                                                            <li
+                                                                                class="megamenu_item megamenu__item--with-submenu ">
+                                                                                <a href="">Power Tools</a>
+                                                                                <ul
+                                                                                    class="megamenu__links megamenu__links--level--1">
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Bath Tiles</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Floor Tiles</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Kitchen Tiles</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Facade Tiles</a>
+                                                                                    </li>
+
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Mosaic Tiles</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Clinkers and
+                                                                                            Steps</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Swimming Pool
+                                                                                            Tiles</a>
+                                                                                    </li>
+
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">TILES IN
+                                                                                            STOCK</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">New Samples</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Classic</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Wood Effect
+                                                                                            Tiles</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Ventilated
+                                                                                            Facades</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">Vinyl</a>
+                                                                                    </li>
+                                                                                </ul>
+
+                                                                            </li>
+                                                                            <li class="megamenu__item ">
+                                                                                <a href=""> OLOLO</a>
+                                                                            </li>
+                                                                            <li class="megamenu__item ">
+                                                                                <a href=""> OLOLO</a>
+                                                                            </li>
+                                                                            <li class="megamenu__item ">
+                                                                                <a href=""> OLOLO</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <ul
+                                                                            class="megamenu__links megamenu__links--level--0">
+                                                                            <li
+                                                                                class="megamenu__item megamenu__item--with-submenu ">
+                                                                                <a href="">Chto to chto to</a>
+                                                                                <ul
+                                                                                    class="megamenu__links megamenu__links--level--1">
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">nomer1</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">nomer2</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">nomer3</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">nomer4</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">nomer5</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item">
+                                                                                        <a href="">nomer6</a>
+                                                                                    </li>
+
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Hand Tools
+                                                    </a>
+                                                    <div
+                                                        class="departments__submenu departments__submenu--type--megamenu departments__submenu--size--lg">
+                                                        <!-- .megamenu -->
+                                                        <div class="megamenu  megamenu--departments ">
+                                                            <div class="megamenu__body">
+                                                                <div class="row">
+                                                                    <div class="col-4">
+                                                                        <ul
+                                                                            class="megamenu__links megamenu__links--level--0">
+                                                                            <li
+                                                                                class="megamenu__item  megamenu__item--with-submenu ">
+                                                                                <a href="">Hand Tools</a>
+                                                                                <ul
+                                                                                    class="megamenu__links megamenu__links--level--1">
+                                                                                    <li class="megamenu__item"><a
+                                                                                            href="">Screwdrivers</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item"><a
+                                                                                            href="">Handsaws</a>
+                                                                                    </li>
+                                                                                    <li class="megamenu__item"><a
+                                                                                            href="">Knives</a></li>
+                                                                                </ul>
+
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Bath Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Clinker Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Facade Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Floor Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Kitchen Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Mosaic Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Clinkers and Steps
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Swimming Pool Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        TILES IN STOCK
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        New Samples
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Classic
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Wood Effect Tiles
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Ventilated Facades
+                                                    </a>
+                                                </li>
+                                                <li class="departments__item">
+                                                    <a class="departments__item-link" href="">
+                                                        Vinyl
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+
+    <!--site__body-->
+    <div class="site__body">
+        <!--.block-slideshow-->
+        <div class="block-slideshow block-slideshow--layout--with-departments block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block"></div>
+                    <div class="col-12 col-lg-9">
+                        <div class="blcok-slideshow__body">
+                            <div class="owl-carousel">
+                                <a class="block-slideshow__slide" href="">
+                                    <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
+                                        style="background-image: url('images/slides/slide-1.jpg')">
+                                    </div>
+                                    <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
+                                        style="background-image: url('images/slides/slide-1-mobile.jpg')">
+                                    </div>
+                                    <div class="block-slideshow__slide-content">
+                                        <div class="block-slideshow__slide-title">Big choice
+                                            of<br>Plumbing products</div>
+                                        <div class="block-slideshow__slide-text">Various
+                                            tile designs<br>Many sizes</div>
+                                        <div class="block-slideshow__slide-button">
+                                            <span class="btn btn-primary btn-lg">Shop
+                                                now</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+</html>

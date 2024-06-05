@@ -1,0 +1,33 @@
+.nav-menu {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    z-index: 10;
+}
+
+.nav-logo {
+    float:left;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav-item:hover {
+    color: #afb95d;
+    transform: scale(1.2);
+}
+
+.nav-container {
+    float:left;
+}
+body{
+    background-color: #7d7d7d;
+}
