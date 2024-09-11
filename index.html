@@ -4,457 +4,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
-
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
-    <link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="C:\Users\bogda\OneDrive\Dokumenty\Spark Pro\site2\css\style.css">
+    <link rel="stylesheet" href="C:\Users\bogda\OneDrive\Dokumenty\Spark Pro\site2\css\normalice.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/slider/2016/jslider/jSlider.css" />
+    <script src="https://bootstraptema.ru/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="https://bootstraptema.ru/snippets/slider/2016/jslider/jSlider.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--
-    <div class="nav-menu">
-        <img src="C:/Users/bogda/OneDrive/Dokumenty/Spark Pro/site/images/logo.jpg" alt="logo" class="nav-logo">
-        <div class="nav-container">
-            <a href="index.html" class="nav-item">Mājas lapa</a>
-            <a href="/navig/products.html" class="nav-item">Produkti</a>
-            <a href="/navig/news.html" class="nav-item">Jaunumi</a>
-            <a href="/navig/katalog.html" class="nav-item">Katalogi</a>
-            <a href="/navig/makers.html" class="nav-item">Ražotāji</a>
-            <a href="/navig/contacts.html" class="nav-item">Kontakti</a>
-            <a href="/navig/aboutus.html" class="nav-item">Par mums</a>
-            
-        </div>
-        <div class="nav-lang">
-            
-        </div>
-    </div>
-    -->
-    <div class="site">
+    <header class="main-header">
+        <section class="user-header">
+            <div class="user-navigation container">
+                <a class="main-header-logo" href="index.html">
+                    <img src="images/logo.jpg" width="109" height="17" alt="Логотоип интернет-магазина">
+                </a>
+                <form class="search-form" method="get" action="">
+                    <label class="visually-hidden" for="search"></label>
+                    <input class="search" type="search" id="search" name="search" placeholder="Поиск:">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                        <path fill="#ffffff"
+                            d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+                    </svg>
+                </form>
+                <a class="user-navigation-link bookmarks-link" href="">Закладки: 0</a>
+                <a class="user-navigation-link order-link" href="">Оформить заказ</a>
+            </div>
+        </section>
+
         <!--
-    <header class="site__header d-lg-none">
-        <div class="mobile-header mobile-header--sticky" data-sticky-mode="pullToShow">
-            <div class="mobile-header__panel">
-                <div class="container">
-                    <div class="mobile-header__body">
-                        <a class="mobile-header__logo" href="index.html">
-                            <img src="images/vmestologo.svg">
-                        </a>
-                        <div class="search search--location--mobile-header mobile-header__search">
-                            <div class="search__body">
-                                <form class="search__form" action="">
-                                    <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off">
-                                    <button class="search_button search_button--type--submit" type="submit">
-                                        <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#search-20"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="search_button search_button--type--close" type="button">
-                                        <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#cross-20"></use>
-                                        </svg>
-                                    </button>
-                                    <div class="search__border"></div>
-                                </form>
-                                <div class="search__suggestions suggestions suggestions--location--mobile-header"></div>
-                            </div>
-                        </div>
-                        <div class="mobile-header__indicators">
-                            <div class="indicator indicator--mobile-search indicator--mobile d-md-none">
-                                <button class="indicator__button">
-                                    <span class="indicator__area">
-                                        <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#search-20"></use>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="indicator indicator--mobile d-sm-flex d-none">
-                                <a href="wishlist.html" class="indicator__button">
-                                    <span class="indicator__area">
-                                        <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#heart-20"></use>
-                                        </svg>
-                                        <span class="indicator__value">0</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="indicator indicator--mobile">
-                                <a href="cart.html" class="indicator__button">
-                                    <span class="indicator__area">
-                                        <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#cart-20"></use>
-                                        </svg>
-                                        <span class="indicator__value">3</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <section class="contacts container">
+            <h1 class="main-title">Интернет-визитка для плитки </h1>
+            <address class="contacts-info">
+                <a class="contacts-tel" href="tel:+0000000">+371 26543216</a>
+                <p class="contacts-address"> г., ул., д.</p>
+
+            </address>
+        </section>-->
+        <nav class="main-navigation container">
+            <ul class="site-navigation">
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link main-link" href="index.html">Главная</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="company.html">Компания</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="news.html">Новости</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="special.html">Спец. предложения</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="delivery.html">Доставка</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link contacts-link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <main class="main-content">
+        <selection class="promotional-products container">
+            <div class="category-product">
+                <ul class="category-list-left">
+                    <li class="category-materials">
+                        <img class="new-category" src="img/new-flag.png" width="60" height="59"
+                            alt="Метка нового товара">
+                        <h3 class="category-title">Материалы</h3>
+                        <a class="category-btn" href="materials.html">На любой вкус</a>
+                    </li>
+                    <li class="category-tile">
+                        <h3 class="category-title">Дизайн</h3>
+                        <a class="category-btn" href="tile.html">На все случаи</a>
+                    </li>
+                </ul>
 
--->
-        <header class="site__header d-lg-block d-none">
-            <div class="site-header">
-                <!-- .topbar-->
-                <div class="site-header__topbar topbar">
-                    <div class="topbar__container container">
-                        <div class="topbar__row">
-                            <div class="topbar__item topbar__item--link">
-                                <a class="topbar-link" href="about-us.html">About Us</a>
-                            </div>
-                            <div class="topbar__item topbar__item--link">
-                                <a class="topbar-link" href="contact-us.html">Contacts</a>
-                            </div>
-                            <div class="topbar__item topbar__item--link">
-                                <a class="topbar-link" href="location.html">Store Location</a>
-
-                            </div>
-                            <div class="topbar__item topbar__item--link">
-                                <a class="topbar-link" href="track-order.html">Track Order</a>
-                            </div>
-                            <div class="topbar__item topbar__item--link">
-                                <a class="topbar-link" href="blog-classic.html">Blog</a>
-                            </div>
-
-                        </div>
+                <section class="promo-slider">
+                    <h2 class="visually-hidden">Промо слайдер товаров</h2>
+                    <button class="button-slider btn-back" aria-label="Предыдущий слайд">
+                        <img src="img/icon-left.svg" width="22" height="40" alt="Кнопка 1">
+                    </button>
+                    <button class="button-slider btn-next" aria-label="Следующий слайд">
+                        <img src="img/icon-right.svg" width="22" height="40" alt="Кнопка 2">
+                    </button>
+                    <ul class="promo-slider-list">
+                        <li class="promo-slider-item">
+                            <h3 class="promo-slider-title">Перфораторы</h3>
+                            <p class="promo-slider-description">Настоящие мужские игрушки</p>
+                            <img src="img/slider-perforator-logo.jpg" width="620" height="266"
+                                alt="Слайдер товара Перфораторы">
+                            <a class="promo-slider-btn" href="catalog.html">Открыть каталог</a>
+                        </li>
+                        <li class="promo-slider-item slider-none"> <!--Скрываем слайдер-->
+                            <h3 class="promo-slider-title">Дрели</h3>
+                            <p class="promo-slider-description">Соседям на радость!</p>
+                            <img src="img/slider-drills-logo.jpg" width="620" height="266" alt="Слайдер товара Дрели">
+                            <a class="promo-slider-btn" href="catalog.html">Открыть каталог</a>
+                        </li>
+                    </ul>
+                    <div class="promo-slider-controls">
+                        <button type="button" class="promo-slider-controls-btn btn-active"></button>
+                        <button type="button" class="promo-slider-controls-btn "></button>
                     </div>
-                </div>
+                </section>
             </div>
-            <div class="site-header_middle container">
-                <div class="site-header__search">
-                    <div class="search search--location--header">
-                        <div class="search__body">
-                            <form class="search__form" action="">
-                                <select class="search__categories" aria-label="Category">
-                                    <option value="all">All Categories</option>
-                                    <option>Instruments</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Power Tools</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Mehanic Tools</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Hand Tools</option>
-                                    <option>Bath Tiles</option>
-                                    <option>Floor Tiles</option>
-                                    <option>Kitchen Tiles</option>
-                                    <option>Facade Tiles</option>
-                                    <option>Mosaic Tiles</option>
-                                    <option>Clinkers and Steps</option>
-                                    <option>Swimming Pool Tiles</option>
-                                    <option>TILES IN STOCK</option>
-                                    <option>New Samples</option>
-                                    <option>Classic</option>
-                                    <option>Wood Effect Tiles</option>
-                                    <option>Ventilated Facades</option>
-                                    <option>Vinyl</option>
-                                </select>
-                                <input class="search__input" name="search" placeholder="Search over 1,000 products"
-                                    area-label="Site search" type="text" autocomplete="off">
-                                <button class="search__button search__button--type--submit" type="submit">
-
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <ul class="category-list-right">
+                <li class="category-technique">
+                    <h3 class="category-title">Техника</h3>
+                    <a class="category-btn" href="technique.html">Для ........</a>
+                </li>
+                <li class="category-discount">
+                    <h3 class="category-title">Скидки 50%</h3>
+                    <a class="category-btn" href="discount.html">На 350 товаров</a>
+                </li>
+                <li class="category-delivery">
+                    <h3 class="category-title">Доставка</h3>
+                    <a class="category-btn" href="delivery.html">Договоримся</a>
+                </li>
+            </ul>
+        </selection>
+        <section class="popular-product container">
+            <div class="popular-title">
+                <h2 class="popular-product-title">Популярные товары:</h2>
+                <a class="popular-product-btn" href="catalog.html">Все популярные товары</a>
             </div>
-
-
-
-
-            <div class="site-header__nav-panel">
-                <div class="nav-panel nav-panel--sticky" data-sticky-mode="pullToShow">
-                    <div class="nav-panel__container container">
-                        <div class="nav-panel__row">
-                            <div class="nav-panel__departments">
-                                <!-- .departments -->
-                                <div class="departments departments--open departments--fixed"
-                                    data-departments-fixed-by=".block-slideshow">
-                                    <div class="departments__body">
-                                        <div class="departments__links-wrapper">
-                                            <div class="departments__submenus-container">
-                                            </div>
-                                            <ul class="departments__links">
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Power Tools
-                                                    </a>
-
-                                                    <div
-                                                        class="departments__submenu departments__submenu--type--megamenu departments__submenu--size--xl">
-                                                        <!--.megamenu-->
-                                                        <div class="megamenu megamenu--departments">
-                                                            <div class="megamenu__body">
-                                                                <div class="row">
-                                                                    <div class="col-3">
-                                                                        <ul
-                                                                            class="megamenu__links megamenu__links--level--0">
-                                                                            <li
-                                                                                class="megamenu_item megamenu__item--with-submenu ">
-                                                                                <a href="">Power Tools</a>
-                                                                                <ul
-                                                                                    class="megamenu__links megamenu__links--level--1">
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Bath Tiles</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Floor Tiles</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Kitchen Tiles</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Facade Tiles</a>
-                                                                                    </li>
-
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Mosaic Tiles</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Clinkers and
-                                                                                            Steps</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Swimming Pool
-                                                                                            Tiles</a>
-                                                                                    </li>
-
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">TILES IN
-                                                                                            STOCK</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">New Samples</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Classic</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Wood Effect
-                                                                                            Tiles</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Ventilated
-                                                                                            Facades</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">Vinyl</a>
-                                                                                    </li>
-                                                                                </ul>
-
-                                                                            </li>
-                                                                            <li class="megamenu__item ">
-                                                                                <a href=""> OLOLO</a>
-                                                                            </li>
-                                                                            <li class="megamenu__item ">
-                                                                                <a href=""> OLOLO</a>
-                                                                            </li>
-                                                                            <li class="megamenu__item ">
-                                                                                <a href=""> OLOLO</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="col-3">
-                                                                        <ul
-                                                                            class="megamenu__links megamenu__links--level--0">
-                                                                            <li
-                                                                                class="megamenu__item megamenu__item--with-submenu ">
-                                                                                <a href="">Chto to chto to</a>
-                                                                                <ul
-                                                                                    class="megamenu__links megamenu__links--level--1">
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">nomer1</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">nomer2</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">nomer3</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">nomer4</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">nomer5</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item">
-                                                                                        <a href="">nomer6</a>
-                                                                                    </li>
-
-                                                                                </ul>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Hand Tools
-                                                    </a>
-                                                    <div
-                                                        class="departments__submenu departments__submenu--type--megamenu departments__submenu--size--lg">
-                                                        <!-- .megamenu -->
-                                                        <div class="megamenu  megamenu--departments ">
-                                                            <div class="megamenu__body">
-                                                                <div class="row">
-                                                                    <div class="col-4">
-                                                                        <ul
-                                                                            class="megamenu__links megamenu__links--level--0">
-                                                                            <li
-                                                                                class="megamenu__item  megamenu__item--with-submenu ">
-                                                                                <a href="">Hand Tools</a>
-                                                                                <ul
-                                                                                    class="megamenu__links megamenu__links--level--1">
-                                                                                    <li class="megamenu__item"><a
-                                                                                            href="">Screwdrivers</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item"><a
-                                                                                            href="">Handsaws</a>
-                                                                                    </li>
-                                                                                    <li class="megamenu__item"><a
-                                                                                            href="">Knives</a></li>
-                                                                                </ul>
-
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Bath Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Clinker Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Facade Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Floor Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Kitchen Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Mosaic Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Clinkers and Steps
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Swimming Pool Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        TILES IN STOCK
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        New Samples
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Classic
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Wood Effect Tiles
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Ventilated Facades
-                                                    </a>
-                                                </li>
-                                                <li class="departments__item">
-                                                    <a class="departments__item-link" href="">
-                                                        Vinyl
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <ul class="popular-product-list">
+                <li class="popular-product-item">
+                    <article class="product-bfg-9000 ">
+                        <img src="images/marshall gold.jpg" width="218px" height="170px" alt="">
+                        <p class="catalog-btn">
+                            <a href="purchase_products" class="catalog-cart-btn">Купить</a>
+                            <a href="chosen_product" class="catalog-bookmarks-btn">В закладки</a>
+                        </p>
+                        <h3 class="catalog-title">Marshall gold 120x120</h3>
+                        <del class="past-price-btn">45€/м²</del>
+                        <a href="#" class="current-price-btn">39.95 €/м²</a>
+                    </article>
+                </li>
+                <li class="popular-product-item">
+                    <article class="product-bfg-9000 ">
+                        <img src="images/montclair ivory.jpg" width="210px" height="167px" alt="">
+                        <p class="catalog-btn">
+                            <a href="purchase_products" class="catalog-cart-btn">Купить</a>
+                            <a href="chosen_product" class="catalog-bookmarks-btn">В закладки</a>
+                        </p>
+                        <h3 class="catalog-title">Montclair ivory 120x120</h3>
+                        <del class="past-price-btn">45€/м²</del>
+                        <a href="#" class="current-price-btn">39.95 €/м²</a>
+                    </article>
+                </li>
+                <li class="popular-product-item">
+                    <article class="product-bfg-9000 ">
+                        <img src="images/rodas light beige.jpg" width="210px" height="167px" alt="">
+                        <p class="catalog-btn">
+                            <a href="purchase_products" class="catalog-cart-btn">Купить</a>
+                            <a href="chosen_product" class="catalog-bookmarks-btn">В закладки</a>
+                        </p>
+                        <h3 class="catalog-title">Rodas light beige 120x120</h3>
+                        <del class="past-price-btn">45€/м²</del>
+                        <a href="#" class="current-price-btn">39.95 €/м²</a>
+                    </article>
+                </li>
+                <li class="popular-product-item">
+                    <article class="product-bfg-9000 ">
+                        <img src="images/theater stone.jpg" width="210px" height="167px" alt="">
+                        <img class="new-product-label" src="img/new-flag.png" width="60" height="59"
+                            alt="Метка нового товара">
+                        <p class="catalog-btn">
+                            <a href="purchase_products" class="catalog-cart-btn">Купить</a>
+                            <a href="chosen_product" class="catalog-bookmarks-btn">В закладки</a>
+                        </p>
+                        <h3 class="catalog-title">Theater stone 120x120</h3>
+                        <br>
+                        <a href="#" class="current-price-btn">45€/м²</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="popular-manufacturer container">
+            <div class="manufacturer-title">
+                <h2 class="popular-manufacturer-title">Популярные производители</h2>
+                <a class="popular-manufacturer-btn" href="manufacturer.html">Все производители</a>
             </div>
-    </div>
-    </header>
-
-    <!--site__body-->
-    <div class="site__body">
-        <!--.block-slideshow-->
-        <div class="block-slideshow block-slideshow--layout--with-departments block">
+            <ul class="popular-manufacturer-list">
+                <li class="popular-manufacturer-item">
+                    <a href=""></a>
+                    <img src="images/gres.png" width="126px" height="37px">
+                </li>
+                <li class="popular-manufacturer-item">
+                    <a href=""></a>
+                    <img src="images/halcon.png" width="126px" height="37px">
+                </li>
+                <li class="popular-manufacturer-item">
+                    <a href=""></a>
+                    <img src="images/baldocer.png" width="126px" height="37px">
+                </li>
+                <li class="popular-manufacturer-item">
+                    <a href=""></a>
+                    <img src="images/emotion.jpeg" width="126px" height="37px">
+                </li>
+            </ul>
+        </section>
+        <section class="services">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 d-none d-lg-block"></div>
-                    <div class="col-12 col-lg-9">
-                        <div class="blcok-slideshow__body">
-                            <div class="owl-carousel">
-                                <a class="block-slideshow__slide" href="">
-                                    <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
-                                        style="background-image: url('images/slides/slide-1.jpg')">
-                                    </div>
-                                    <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
-                                        style="background-image: url('images/slides/slide-1-mobile.jpg')">
-                                    </div>
-                                    <div class="block-slideshow__slide-content">
-                                        <div class="block-slideshow__slide-title">Big choice
-                                            of<br>Plumbing products</div>
-                                        <div class="block-slideshow__slide-text">Various
-                                            tile designs<br>Many sizes</div>
-                                        <div class="block-slideshow__slide-button">
-                                            <span class="btn btn-primary btn-lg">Shop
-                                                now</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="service-title">Сервисы</h2>
+                <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+                <p class="service-description">Мы стораемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                <div class="slider-services">
+                    <ul class="slider-controls-list">
+                        <li class="slider-services-list">
+                            <button type="button" class="slider-controls-btn button active">Доставка</button>
+                        </li>
+                        <li class="slider-services-list">
+                            <button type="button" class="slider-controls-btn">Гарантия</button>
+                        </li>
+                    </ul>
+                    <ul class="slider-services-list">
+                        <li class="slider-services-item delivery slider-active">
+                            <h2 class="slider-services-title">Доставка</h2>
+                            <p class="slider-services-delivery">Мы с удовольсвием достваим ваш товр прямо к вашему
+                                подъезду совершенно бесплатно! Ведь мы неплохо заработаем, <br> поднимая его на ваш
+                                этаж!</p>
+                        </li>
+                        <li class="slider-services-item guarantee">
+                            <h2 class="slider-services-title">Гарантия</h2>
+                            <p class="slider-services-guarantee">лмщшмлмохз</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <section class="about-us container">
+            <!--<h2 class="visually-hidden">О нас</h2> -->
+            <section class="about-us-info">
+                <h2 class="contacts-title">Компания</h2>
+                <p class="contacts-description">Настоящий шопинг</p>
+                <p class="contacts-description">Мы можем доставить ваш товар даже в самый отдаленный угол нашей страны
+                </p>
+                <ul class="company-list">
+                    <li class="company-item">Довезём товар в целостности и сохранности</li>
+                    <li class="company-item">алцщзаз</li>
+                    <li class="company-item">ааыаыркреоно</li>
+                </ul>
+                <a class="about-btn" href="about_the_company.html">Подробнее о компании</a>
+            </section>
+            <section class="communication">
+                <h2 class="communication-title">Контакты</h2>
+                <p class="communication-description">Вы можете забрать товар сами, заехав в наш офис</p>
+                <a href="office.html" class="communication-map">
+                    <!-- <img src="images/location.png" width="300" height="158" alt="Офис компании находится по адресу Ganību dambis 24d, Ziemeļu rajons, Rīga, LV-1005">-->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2062.831029377508!2d24.118726252666303!3d56.982252461623716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfce8aba85fd%3A0x9e9fd39e5bedba95!2zRkzEqsW9VSBHQUxFUklKQQ!5e0!3m2!1sru!2slv!4v1725631430822!5m2!1sru!2slv"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                </a>
+            </section>
+        </section>
+
+    </main>
+    <!--
+    <section class="modal-map">
+        <h2 class="visually-hidden">Где мы находимся</h2>
+        <div class="modal-wrapper-map">
+            <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2062.831029377508!2d24.118726252666303!3d56.982252461623716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfce8aba85fd%3A0x9e9fd39e5bedba95!2zRkzEqsW9VSBHQUxFUklKQQ!5e0!3m2!1sru!2slv!4v1725631430822!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>-->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+
+        <footer class="text-white text-center text-lg-start bg-dark">
+            <!-- Grid container -->
+            <div class="container p-4" style="background-color: #32425c;">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About company</h5>
+
+                        <p>
+                            High quality Spanish tiles for every taste
+                        </p>
+
+                        <div class="mt-4">
+                            <!-- Facebook -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <!-- Dribbble -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-dribbble"></i></a>
+                            <!-- Twitter -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-twitter"></i></a>
+                            <!-- Google + -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <!-- Linkedin -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Info for the Location</h5>
+
+
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Rīga, Ganību
+                                    dambis 24d, LV-1005</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                    class="ms-2">vicb@inbox.lv</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 371 265 432
+                                    16</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                        <table class="table text-center text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Mon - Fri:</td>
+                                    <td>10am - 6pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday:</td>
+                                    <td>10am - 4pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #293449;">
+                © 2025
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
 
 </body>
-
-
 
 </html>
